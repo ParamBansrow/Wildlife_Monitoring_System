@@ -3,7 +3,6 @@ WILDLIFE MONITOR - RASPBERRY PI CONTROLLER (FINAL)
 -------------------------------------------------
 Connects to MQTT, waits for a trigger, records video,
 runs AI detection, saves to DB, and sends notifications.
-(Includes ffmpeg fix for web-playable MP4s)
 """
 import paho.mqtt.client as mqtt
 import json
@@ -297,3 +296,4 @@ if __name__ == "__main__":
         print("\nShutting down...")
     except Exception as e:
         print(f"Main loop error: {e}")
+
