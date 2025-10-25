@@ -1,8 +1,5 @@
 """
-WILDLIFE MONITOR - WEB DASHBOARD (Original Unfiltered Version)
----------------------------------
-A simple Flask web server to view the capture database.
-(This version *includes* "False Positive" entries and fixes typos.)
+WILDLIFE MONITOR - WEB DASHBOARD 
 """
 from flask import Flask, render_template, send_from_directory, g
 import sqlite3
@@ -73,3 +70,4 @@ if __name__ == '__main__':
     print(f"Starting Wildlife Dashboard Server...")
     print(f"Access it at http://{HOST_IP}:{HOST_PORT}")
     app.run(host=HOST_IP, port=HOST_PORT, debug=False)
+
